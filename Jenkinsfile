@@ -2,8 +2,12 @@ pipeline {
     agent any
     
     environment {
-        NODE_VERSION = '18'
+        NODE_VERSION = '24'
         APP_NAME = 'simple-cicd-demo'
+    }
+
+    tools {
+        nodejs 'Node24'
     }
     
     stages {
